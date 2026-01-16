@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>회사 소개 - Corporate Identity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@100..900&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2c5e9b",
+                        "background-light": "#f6f7f9",
+                        "background-dark": "#202937",
+                    },
+                    fontFamily: {
+                        "display": ["Pretendard", "Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .timeline-track::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: #2c5e9b33;
+        }
+        body {
+            -webkit-tap-highlight-color: transparent;
+            word-break: keep-all;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#121417] dark:text-white">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center p-4 justify-between max-w-md mx-auto">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined" onclick="window.location.href='index.html'">arrow_back_ios_new</span>
+</div>
+<h2 class="text-[#121417] dark:text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">회사 소개</h2>
+</div>
+</header>
+<main class="max-w-md mx-auto pb-32">
+<div class="px-4 pt-6">
+<div class="relative overflow-hidden rounded-xl bg-primary aspect-[16/10] flex flex-col justify-end p-6 shadow-xl">
+<div class="absolute inset-0 opacity-20" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-5Ukhit6n1HDCsZn5lt2HTEqLujUt_xPC4J4VjfnTvNfSHoS31iNbJEjrttX-g6AaEA8niXpOApn92Af-R0f2_fZj_EwfQHlVnSrhikuUZfkbMTglqwujMtiVSelGh-BdDwkBv1pxLgEyyRlhfR_-FrgpjFNNNpzV9qMkl7v3jvIG8XMrg0l9w9miyrN2QzdYmaHnI7_eCnC_2n0oQcCHzAQ3l41O8qbre2WkQbRbIOJscIOfaiQsxWdgP6EGEDM9X2TRpF05GQs"); background-size: cover;'></div>
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-[10px] font-bold uppercase tracking-widest mb-3">비전 및 미션</span>
+<h1 class="text-white text-2xl font-extrabold leading-tight">목표가 있는 혁신으로<br/>미래를 선도합니다</h1>
+</div>
+</div>
+</div>
+<section class="mt-8 px-4">
+<p class="text-lg font-medium leading-relaxed text-[#121417] dark:text-gray-200">
+            복잡한 기술과 실질적인 비즈니스 성과를 연결하며, 정직함을 바탕으로 모든 디지털 전환의 여정을 가이드합니다.
+        </p>
+<div class="mt-4 h-1 w-12 bg-primary rounded-full"></div>
+</section>
+<section class="mt-12 px-4">
+<h3 class="text-xl font-bold mb-8 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history</span>
+            회사 연혁
+        </h3>
+<div class="relative timeline-track pl-10 space-y-12 pb-4">
+<div class="relative">
+<div class="absolute -left-10 top-1.5 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary shadow-sm"></div>
+<div>
+<span class="text-sm font-bold text-primary">2014</span>
+<h4 class="text-base font-bold mt-1">창립 및 비전 수립</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                        런던에서 맞춤형 소프트웨어 아키텍처 전문 엔지니어 5인으로 시작하였습니다.
+                    </p>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -left-10 top-1.5 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary shadow-sm"></div>
+<div>
+<span class="text-sm font-bold text-primary">2018</span>
+<h4 class="text-base font-bold mt-1">글로벌 시장 확장</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                        뉴욕과 싱가포르 지사를 설립하여 글로벌 기업 고객을 위한 서비스를 시작하였습니다.
+                    </p>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -left-10 top-1.5 size-5 rounded-full border-4 border-background-light dark:border-background-dark bg-primary shadow-sm"></div>
+<div>
+<span class="text-sm font-bold text-primary">2023</span>
+<h4 class="text-base font-bold mt-1">혁신 기술의 리더</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                        200건 이상의 디지털 전환 성공 사례를 인정받아 '올해의 기술 컨설팅사'로 선정되었습니다.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-16 px-4">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="text-xl font-bold">팀 소개</h3>
+<p class="text-sm text-gray-500">전략을 이끄는 리더십 팀입니다.</p>
+</div>
+<span class="text-primary text-sm font-bold">전체 보기</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-gray-800 p-3 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+<div class="aspect-square rounded-lg bg-gray-200 mb-3 overflow-hidden grayscale hover:grayscale-0 transition-all duration-300">
+<img alt="CEO 초상화" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGV5iJnqNdsK9GNEpZYW3YVx2rs2N79wTXr13pqVevxkbZSr509Iv4CDhwGjLAVSkDPC19FJGQW2sZxz8mlrwQGLpkKOiOVku7hm6vNa87IKIKjNISJlD6q2SuPEizaDM59_KqQ6gphfYkDI1VSwq8aoSEJxPMFo3Wg1Z37mXwaBAmXxVgNgdLIM7hQ7UsWNh9zaGglHxKTIV1l5S0mnQnuh5jRiaeWPqi6uaa_aYlrzSfcrWB5hjdM6mACx2AEIS6dvrJuafLrQA"/>
+</div>
+<h5 class="font-bold text-sm">마커스 첸</h5>
+<p class="text-[11px] text-primary font-semibold mb-2">CEO &amp; 설립자</p>
+<p class="text-[10px] text-gray-500 leading-tight">전략 기술 리더십 및 벤처 캐피털 분야 15년 이상의 경력 보유.</p>
+</div>
+<div class="bg-white dark:bg-gray-800 p-3 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+<div class="aspect-square rounded-lg bg-gray-200 mb-3 overflow-hidden grayscale hover:grayscale-0 transition-all duration-300">
+<img alt="CTO 초상화" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg38_-cnM9HLLy2-TKU2Fn6IPK7o8PQZnGaB0CinleTy2p1yYUQcWgzj7s2v_Mq1qhspGIl2hMrfUKwdQl7ShCTDCxMPjsSGAZKFep9GJN7PddfGpuT4GsCzH0u8txVu976m-nmRrghzO48VTnhXC-WuGYgRuSoFE6gnaeNgaOZhmwnsv65ylePHEnYB3cYOUGF9EBAB2-b7-_drSaJ9ubU8xckJJ3lBr1gzwkeFlGlueeXvfiAMPCHJ-AI87A4NG31hHw0HE4iJE"/>
+</div>
+<h5 class="font-bold text-sm">엘레나 로드리게스</h5>
+<p class="text-[11px] text-primary font-semibold mb-2">CTO</p>
+<p class="text-[10px] text-gray-500 leading-tight">글로벌 빅테크 기업 출신 클라우드 아키텍트. 확장성 분야 전문가.</p>
+</div>
+</div>
+</section>
+<section class="mt-16 px-4">
+<div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] text-center border border-primary/10">
+<div class="size-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">chat_bubble</span>
+</div>
+<h3 class="text-xl font-bold mb-3">전문가와 상담하세요</h3>
+<p class="text-gray-500 text-sm mb-8 px-4 leading-relaxed">
+                다음 프로젝트의 방향성을 논의하기 위해 전략팀과의 30분 무료 상담을 신청하세요.
+            </p>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold shadow-lg shadow-primary/30 active:scale-[0.98] transition-transform">
+                상담 요청하기
+            </button>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-background-dark/90 ios-tab-blur border-t border-gray-200 dark:border-gray-800 pb-8 pt-3 px-6">
+<div class="max-w-md mx-auto flex justify-between items-center">
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500" onclick="window.location.href='index.html'">
+<span class="material-symbols-outlined text-[26px]">home</span>
+<span class="text-[10px] font-bold">홈</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary" onclick="window.location.href='AboutUs.html'">
+<span class="material-symbols-outlined text-[26px]">info</span>
+<span class="text-[10px] font-bold">회사소개</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500" onclick="window.location.href='OurService.html'">
+<span class="material-symbols-outlined text-[26px]">work</span>
+<span class="text-[10px] font-bold">서비스</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500" onclick="window.location.href='ConsultationReq.html'" >
+<span class="material-symbols-outlined text-[26px]">chat_bubble</span>
+<span class="text-[10px] font-bold">상담신청</span>
+</button>
+</div>
+</nav>
+
+</body></html>
