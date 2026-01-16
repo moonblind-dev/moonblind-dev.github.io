@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2c5e9b",
+                        "kakao": "#FEE500",
+                        "kakao-text": "#191919",
+                        "background-light": "#f6f7f9",
+                        "background-dark": "#202937",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "Noto Sans KR", "sans-serif"],
+                        "sans": ["Noto Sans KR", "Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Noto Sans KR', 'Manrope', sans-serif;
+        }
+        .form-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+        .bottom-nav-blur {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col items-center">
+<div class="w-full max-w-[480px] min-h-screen flex flex-col bg-background-light dark:bg-background-dark overflow-x-hidden pb-24 relative">
+<header class="sticky top-0 z-10 flex items-center bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 px-4 py-4 justify-between">
+<div class="text-primary flex size-10 shrink-0 items-center justify-start cursor-pointer">
+<span class="material-symbols-outlined font-bold" onclick="window.location.href='index.html'">arrow_back_ios</span>
+</div>
+<h2 class="text-[#121417] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">상담 신청</h2>
+</header>
+<main class="flex-1 flex flex-col p-4 space-y-6">
+<section>
+<h3 class="text-[#121417] dark:text-white tracking-tight text-2xl font-bold leading-tight pt-4 pb-2">비즈니스의 성공을 위한 파트너</h3>
+<p class="text-[#4e5b6b] dark:text-gray-400 text-base font-normal leading-relaxed">전문가들이 고객님의 요구사항을 분석하여 최적의 전략을 제안해 드립니다. 영업일 기준 24시간 이내에 답변을 드릴 수 있도록 노력하겠습니다.</p>
+</section>
+<div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-5 form-shadow space-y-5">
+<div class="flex flex-col w-full">
+<p class="text-[#121417] dark:text-white text-sm font-semibold leading-normal pb-2 tracking-wider">성함</p>
+<input class="form-input flex w-full rounded-lg text-[#121417] dark:text-white focus:ring-2 focus:ring-primary/20 border border-[#dde0e4] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#9ca3af] p-[15px] text-base font-normal" placeholder="이름을 입력해 주세요" type="text"/>
+</div>
+<div class="flex flex-col w-full">
+<p class="text-[#121417] dark:text-white text-sm font-semibold leading-normal pb-2 tracking-wider">연락처</p>
+<input class="form-input flex w-full rounded-lg text-[#121417] dark:text-white focus:ring-2 focus:ring-primary/20 border border-[#dde0e4] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#9ca3af] p-[15px] text-base font-normal" placeholder="010-0000-0000" type="tel"/>
+</div>
+<div class="flex flex-col w-full">
+<p class="text-[#121417] dark:text-white text-sm font-semibold leading-normal pb-2 tracking-wider">이메일</p>
+<input class="form-input flex w-full rounded-lg text-[#121417] dark:text-white focus:ring-2 focus:ring-primary/20 border border-[#dde0e4] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-[#9ca3af] p-[15px] text-base font-normal" placeholder="example@company.com" type="email"/>
+</div>
+<div class="flex flex-col w-full">
+<p class="text-[#121417] dark:text-white text-sm font-semibold leading-normal pb-2 tracking-wider">문의 내용</p>
+<textarea class="form-input flex w-full rounded-lg text-[#121417] dark:text-white focus:ring-2 focus:ring-primary/20 border border-[#dde0e4] dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary placeholder:text-[#9ca3af] p-[15px] text-base font-normal resize-none" placeholder="프로젝트의 목표나 구체적인 요구사항을 입력해 주세요..." rows="4"></textarea>
+</div>
+<div class="flex items-start gap-3 pt-2">
+<input class="mt-1 h-5 w-5 rounded border-gray-300 text-primary focus:ring-primary cursor-pointer" id="privacy" type="checkbox"/>
+<label class="text-sm text-[#4e5b6b] dark:text-gray-400 leading-snug" for="privacy">
+<a class="text-primary font-medium underline" href="#">개인정보 수집 및 이용 동의</a> 내용에 동의합니다.
+                    </label>
+</div>
+<div class="space-y-3 pt-2">
+<button class="w-full bg-primary hover:bg-[#244e82] text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 group">
+<span>상담 신청하기</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">send</span>
+</button>
+<button class="w-full bg-kakao hover:bg-[#EED200] text-kakao-text font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3C6.477 3 2 6.477 2 10.75c0 2.825 2.016 5.304 5.07 6.755-.17.584-.61 2.107-.698 2.417-.11.393.136.388.286.29.117-.076 1.86-1.264 2.6-1.765.237.032.48.053.742.053 5.523 0 10-3.477 10-7.75S17.523 3 12 3z"></path>
+</svg>
+<span>카카오톡 상담하기</span>
+</button>
+</div>
+</div>
+<footer class="mt-8 space-y-6">
+<div class="h-px bg-gray-200 dark:bg-gray-800 w-full"></div>
+<h4 class="text-[#121417] dark:text-white text-base font-bold">직접 연락하기</h4>
+<div class="space-y-4">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<p class="text-[#121417] dark:text-white text-sm font-semibold">본사 위치</p>
+<p class="text-[#4e5b6b] dark:text-gray-400 text-xs">서울특별시 강남구 테헤란로 123, 10층</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<p class="text-[#121417] dark:text-white text-sm font-semibold">대표 전화</p>
+<p class="text-[#4e5b6b] dark:text-gray-400 text-xs">02-1234-5678</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<p class="text-[#121417] dark:text-white text-sm font-semibold">이메일 문의</p>
+<p class="text-[#4e5b6b] dark:text-gray-400 text-xs">contact@enterprise-core.com</p>
+</div>
+</div>
+</div>
+<div class="w-full h-32 rounded-xl bg-gradient-to-br from-primary/10 to-primary/30 relative overflow-hidden border border-primary/5">
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, #2c5e9b 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-primary font-display font-bold opacity-40 text-xs tracking-widest uppercase">Global Network Active</span>
+</div>
+</div>
+</footer>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-background-dark/90 ios-tab-blur border-t border-gray-200 dark:border-gray-800 pb-8 pt-3 px-6">
+<div class="max-w-md mx-auto flex justify-between items-center">
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500" onclick="window.location.href='index.html'">
+<span class="material-symbols-outlined text-[26px]">home</span>
+<span class="text-[10px] font-bold">홈</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500" onclick="window.location.href='AboutUs.html'">
+<span class="material-symbols-outlined text-[26px]">info</span>
+<span class="text-[10px] font-bold">회사소개</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500" onclick="window.location.href='OurService.html'">
+<span class="material-symbols-outlined text-[26px]">work</span>
+<span class="text-[10px] font-bold">서비스</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary" onclick="window.location.href='ConsultationReq.html'" >
+<span class="material-symbols-outlined text-[26px]">chat_bubble</span>
+<span class="text-[10px] font-bold">상담신청</span>
+</button>
+</div>
+</nav>
+</div>
+
+</body></html>
